@@ -71,7 +71,7 @@ plot(clusters,ann=FALSE)
 
 # Study: Reproduced!
 
-Check out the application at [http://bruno.shinyapps.io/digitize]
+Check out the application at [shiny.rstudio.com](http://bruno.shinyapps.io/digitize)
 <br>Check out the application source at <a href="https://github.com/bschousek/digitize">github</a>
 <br><br>
 This presentation was produced using [slidify](http://slidify.org/)<br>and the [reveal.js](http://lab.hakim.se/reveal-js/#/)framework

@@ -5,7 +5,7 @@ author      : Brian Schousek
 job         : Developed as a project for the Coursera Developing Data Products class
 framework: revealjs
 revealjs:
-  theme: night
+  theme: sky
   transition: parallax  #concave
 
 widgets     : []            # {mathjax, quiz, bootstrap}
@@ -26,7 +26,7 @@ mode        : selfcontained # {standalone, draft}
 ---
 
 
-# The Problem
+## The Problem
 
 * You have been assigned to confirm the results of a study performed in 1998.
 
@@ -40,7 +40,7 @@ mode        : selfcontained # {standalone, draft}
 ---
 
 
-## The Solution: Plot Digitizer
+### The Solution: Plot Digitizer
 
 <img src="./assets/img/screencap.png" height="450px">
 
@@ -49,7 +49,7 @@ mode        : selfcontained # {standalone, draft}
 
 ---
 
-## Methods
+### Methods
 
 
 * [Plot Digitizer](http://bruno.shinyapps.io/digitize) loads the image into R and performs hierarchical cluster analysis.
@@ -59,15 +59,22 @@ mode        : selfcontained # {standalone, draft}
 * Liberal use of reactive() shiny functions keeps the response snappy.
 
 
+```r
+clusters=hclust(dist(sampledata))
+plot(clusters,ann=FALSE)
+```
 
+![plot of chunk plot](assets/fig/plot.png) 
 
 ---
 
 
-## Study: Reproduced!
+# Study: Reproduced!
 
 Check out the application at [http://bruno.shinyapps.io/digitize]
 <br>Check out the application source at <a href="https://github.com/bschousek/digitize">github</a>
 <br><br>
 This presentation was produced using [slidify](http://slidify.org/)<br>and the [reveal.js](http://lab.hakim.se/reveal-js/#/)framework
 <br>Presentation source at [github](https://github.com/bschousek/digitize_present)
+<br>
+

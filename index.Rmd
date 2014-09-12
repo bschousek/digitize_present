@@ -35,7 +35,7 @@ mode        : selfcontained # {standalone, draft}
 * The only remaining artifacts of the study are some grainy bitmap plots posted to now defunct geocities.com, and are only available at archive.org.
 
 
-<img src="./assets/img/bcaffo.png" height="300px">
+<a href="http://bcaffo.com/" target="_blank"><img src="./assets/img/bcaffo.png" height="300px"></a>
 
 ---
 
@@ -44,7 +44,7 @@ mode        : selfcontained # {standalone, draft}
 
 <img src="./assets/img/screencap.png" height="450px">
 
-Plot Digitizer extracts trace data from bitmap plots and allows the user to save it in an R dataframe.
+[Plot Digitizer](http://bruno.shinyapps.io/digitize) extracts trace data from bitmap plots and allows the user to save it in an R dataframe.
 
 
 ---
@@ -52,7 +52,7 @@ Plot Digitizer extracts trace data from bitmap plots and allows the user to save
 ## Methods
 
 
-* Plot Digitizer loads the image into R and performs hierarchical cluster analysis.
+* [Plot Digitizer](http://bruno.shinyapps.io/digitize) loads the image into R and performs hierarchical cluster analysis.
 * Plots can be jpeg, bitmap, or png. (Sorry, 16 color animated pegasus gifs not supported.)
 * The user can choose how many color levels are to remain in the resulting data.
 * The user can also choose which of the extracted colors are plotted and saved to the R data file.
@@ -66,9 +66,8 @@ Plot Digitizer extracts trace data from bitmap plots and allows the user to save
 
 ## Study: Reproduced!
 
-Check out the app at <a href="http://bruno.shinyapps.io/digitize">bruno.shinyapps.io/digitize</a>
-<p>Check out the source at <a href="https://github.com/bschousek/digitize">github</a>
-
-
-
-This slide set was produced using [slidify](http://slidify.org/) and the [reveal.js](framework)
+Check out the application at [http://bruno.shinyapps.io/digitize]
+<br>Check out the application source at <a href="https://github.com/bschousek/digitize">github</a>
+<br><br>
+This presentation was produced using [slidify](http://slidify.org/)<br>and the [reveal.js](http://lab.hakim.se/reveal-js/#/)framework
+<br>Presentation source at [github](https://github.com/bschousek/digitize_present)

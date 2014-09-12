@@ -8,12 +8,11 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
-  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/night.css" id="theme">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/sky.css" id="theme">
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" id="theme">
   <!--[if lt IE 9]>
   <script src="lib/js/html5shiv.js"></script>
-  <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
-
+  <![endif]-->  
 </head>
 <body>
   <div class="reveal">
@@ -26,7 +25,7 @@
 
 </section>
 <section class='' data-state='' id='slide-2'>
-  <h1>The Problem</h1>
+  <h2>The Problem</h2>
   <ul>
 <li><p>You have been assigned to confirm the results of a study performed in 1998.</p></li>
 <li><p>Unfortunately the magnetic tapes which contained all of the data from the study were used to prop up a poorly shielded CRT monitor. Those tapes are now all blank.</p></li>
@@ -37,14 +36,14 @@
 
 </section>
 <section class='' data-state='' id='slide-3'>
-  <h2>The Solution: Plot Digitizer</h2>
+  <h3>The Solution: Plot Digitizer</h3>
   <p><img src="./assets/img/screencap.png" height="450px"></p>
 
 <p><a href="http://bruno.shinyapps.io/digitize">Plot Digitizer</a> extracts trace data from bitmap plots and allows the user to save it in an R dataframe.</p>
 
 </section>
 <section class='' data-state='' id='slide-4'>
-  <h2>Methods</h2>
+  <h3>Methods</h3>
   <ul>
 <li><a href="http://bruno.shinyapps.io/digitize">Plot Digitizer</a> loads the image into R and performs hierarchical cluster analysis.</li>
 <li>Plots can be jpeg, bitmap, or png. (Sorry, 16 color animated pegasus gifs not supported.)</li>
@@ -53,14 +52,21 @@
 <li>Liberal use of reactive() shiny functions keeps the response snappy.</li>
 </ul>
 
+<pre><code class="r">clusters=hclust(dist(sampledata))
+plot(clusters,ann=FALSE)
+</code></pre>
+
+<p><img src="assets/fig/plot.png" alt="plot of chunk plot"> </p>
+
 </section>
 <section class='' data-state='' id='slide-5'>
-  <h2>Study: Reproduced!</h2>
+  <h1>Study: Reproduced!</h1>
   <p>Check out the application at [<a href="http://bruno.shinyapps.io/digitize">http://bruno.shinyapps.io/digitize</a>]
 <br>Check out the application source at <a href="https://github.com/bschousek/digitize">github</a>
 <br><br>
 This presentation was produced using <a href="http://slidify.org/">slidify</a><br>and the <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a>framework
-<br>Presentation source at <a href="https://github.com/bschousek/digitize_present">github</a></p>
+<br>Presentation source at <a href="https://github.com/bschousek/digitize_present">github</a>
+<br></p>
 
 </section>
     </div>
@@ -76,7 +82,7 @@ This presentation was produced using <a href="http://slidify.org/">slidify</a><b
     progress: true,
     history: true,
     center: true,
-    theme: Reveal.getQueryHash().theme || 'night', 
+    theme: Reveal.getQueryHash().theme || 'sky', 
     transition: Reveal.getQueryHash().transition || 'parallax', 
     dependencies: [
     // Cross-browser shim that fully implements classList -

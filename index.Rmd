@@ -1,17 +1,14 @@
 ---
-title       : Plot Digitizer
-subtitle    : A tool for extracting numerical data from bitmap files.
-author      : Brian Schousek
-job         : Developed as a project for the Coursera Developing Data Products class
-framework: revealjs
+title       :  Plot Digitizer
+subtitle    :  A tool for extracting numerical data from bitmap files.
+author      :  Brian Schousek
+job         :  Developed as a project for the Coursera Developing Data Products class
+framework   :  revealjs
 revealjs:
-  theme: sky
-  transition: parallax  #concave
-
-widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
-
-
+  theme:  sky
+  transition:  parallax  #concave
+widgets    : []            # {mathjax, quiz, bootstrap}
+mode       : selfcontained # {standalone, draft}
 --- 
 
 # Plot Digitizer
@@ -73,7 +70,7 @@ plot(clusters,ann=FALSE)
 
 # Study: Reproduced!
 
-Check out the application at [http://bruno.shinyapps.io/digitize]
+Check out the application at [shiny.rstudio.com](http://bruno.shinyapps.io/digitize)
 <br>Check out the application source at <a href="https://github.com/bschousek/digitize">github</a>
 <br><br>
 This presentation was produced using [slidify](http://slidify.org/)<br>and the [reveal.js](http://lab.hakim.se/reveal-js/#/)framework

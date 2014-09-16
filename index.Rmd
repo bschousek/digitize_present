@@ -1,17 +1,14 @@
 ---
-title       : Plot Digitizer
-subtitle    : A tool for extracting numerical data from bitmap files.
-author      : Brian Schousek
-job         : Developed as a project for the Coursera Developing Data Products class
-framework: revealjs
+title       :  Plot Digitizer
+subtitle    :  A tool for extracting numerical data from bitmap files.
+author      :  Brian Schousek
+job         :  Developed as a project for the Coursera Developing Data Products class
+framework   :  revealjs
 revealjs:
-  theme: sky
-  transition: parallax  #concave
-
-widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
-
-
+  theme:  sky
+  transition:  parallax  #concave
+widgets    : []            # {mathjax, quiz, bootstrap}
+mode       : selfcontained # {standalone, draft}
 --- 
 
 # Plot Digitizer
